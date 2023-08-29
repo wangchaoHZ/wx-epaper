@@ -56,54 +56,229 @@
 
 /**
  * partial screen update LUT
-**/
+ **/
 const unsigned char EPD_2IN9D_lut_vcom1[] = {
-    0x00, 0x19, 0x01, 0x00, 0x00, 0x01,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00
-    ,0x00, 0x00,
+    0x00,
+    0x19,
+    0x01,
+    0x00,
+    0x00,
+    0x01,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
 };
 const unsigned char EPD_2IN9D_lut_ww1[] = {
-    0x00, 0x19, 0x01, 0x00, 0x00, 0x01,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00,
+    0x19,
+    0x01,
+    0x00,
+    0x00,
+    0x01,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
 };
 const unsigned char EPD_2IN9D_lut_bw1[] = {
-    0x80, 0x19, 0x01, 0x00, 0x00, 0x01,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x80,
+    0x19,
+    0x01,
+    0x00,
+    0x00,
+    0x01,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
 };
 const unsigned char EPD_2IN9D_lut_wb1[] = {
-    0x40, 0x19, 0x01, 0x00, 0x00, 0x01,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x40,
+    0x19,
+    0x01,
+    0x00,
+    0x00,
+    0x01,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
 };
 const unsigned char EPD_2IN9D_lut_bb1[] = {
-    0x00, 0x19, 0x01, 0x00, 0x00, 0x01,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+    0x00,
+    0x19,
+    0x01,
+    0x00,
+    0x00,
+    0x01,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
+    0x00,
 };
-
 
 /******************************************************************************
 function :	Software reset
@@ -137,7 +312,7 @@ static void EPD_2IN9D_SendCommand(UBYTE Reg)
     DEV_Digital_Write(EPD_DC_PIN, 0);
     DEV_Digital_Write(EPD_CS_PIN, 0);
     DEV_SPI_WriteByte(Reg);
-    DEV_Digital_Write(EPD_CS_PIN, 1);
+    // DEV_Digital_Write(EPD_CS_PIN, 1);
 }
 
 /******************************************************************************
@@ -150,7 +325,7 @@ static void EPD_2IN9D_SendData(UBYTE Data)
     DEV_Digital_Write(EPD_DC_PIN, 1);
     DEV_Digital_Write(EPD_CS_PIN, 0);
     DEV_SPI_WriteByte(Data);
-    DEV_Digital_Write(EPD_CS_PIN, 1);
+    // DEV_Digital_Write(EPD_CS_PIN, 1);
 }
 
 /******************************************************************************
@@ -161,11 +336,12 @@ void EPD_2IN9D_ReadBusy(void)
 {
     Debug("e-Paper busy\r\n");
     UBYTE busy;
-    do {
+    do
+    {
         EPD_2IN9D_SendCommand(0x71);
         busy = DEV_Digital_Read(EPD_BUSY_PIN);
-        busy =!(busy & 0x01);
-    } while(busy);
+        busy = !(busy & 0x01);
+    } while (busy);
     DEV_Delay_ms(20);
     Debug("e-Paper busy release\r\n");
 }
@@ -176,62 +352,67 @@ parameter:
 ******************************************************************************/
 static void EPD_2IN9D_SetPartReg(void)
 {
-	
-    EPD_2IN9D_SendCommand(0x01);	//POWER SETTING
+
+    EPD_2IN9D_SendCommand(0x01); // POWER SETTING
     EPD_2IN9D_SendData(0x03);
     EPD_2IN9D_SendData(0x00);
     EPD_2IN9D_SendData(0x2b);
     EPD_2IN9D_SendData(0x2b);
     EPD_2IN9D_SendData(0x03);
 
-    EPD_2IN9D_SendCommand(0x06);	//boost soft start
-    EPD_2IN9D_SendData(0x17);     //A
-    EPD_2IN9D_SendData(0x17);     //B
-    EPD_2IN9D_SendData(0x17);     //C
+    EPD_2IN9D_SendCommand(0x06); // boost soft start
+    EPD_2IN9D_SendData(0x17);    // A
+    EPD_2IN9D_SendData(0x17);    // B
+    EPD_2IN9D_SendData(0x17);    // C
 
     EPD_2IN9D_SendCommand(0x04);
     EPD_2IN9D_ReadBusy();
 
-    EPD_2IN9D_SendCommand(0x00);	//panel setting
-    EPD_2IN9D_SendData(0xbf);     //LUT from OTP，128x296
+    EPD_2IN9D_SendCommand(0x00); // panel setting
+    EPD_2IN9D_SendData(0xbf);    // LUT from OTP，128x296
 
-    EPD_2IN9D_SendCommand(0x30);	//PLL setting
-    EPD_2IN9D_SendData(0x3a);     // 3a 100HZ   29 150Hz 39 200HZ	31 171HZ
+    EPD_2IN9D_SendCommand(0x30); // PLL setting
+    EPD_2IN9D_SendData(0x3a);    // 3a 100HZ   29 150Hz 39 200HZ	31 171HZ
 
-    EPD_2IN9D_SendCommand(0x61);	//resolution setting
+    EPD_2IN9D_SendCommand(0x61); // resolution setting
     EPD_2IN9D_SendData(EPD_2IN9D_WIDTH);
     EPD_2IN9D_SendData((EPD_2IN9D_HEIGHT >> 8) & 0xff);
     EPD_2IN9D_SendData(EPD_2IN9D_HEIGHT & 0xff);
 
-    EPD_2IN9D_SendCommand(0x82);	//vcom_DC setting
+    EPD_2IN9D_SendCommand(0x82); // vcom_DC setting
     EPD_2IN9D_SendData(0x12);
-	
+
     EPD_2IN9D_SendCommand(0X50);
     EPD_2IN9D_SendData(0x97);
-	
+
     unsigned int count;
     EPD_2IN9D_SendCommand(0x20);
-    for(count=0; count<44; count++) {
+    for (count = 0; count < 44; count++)
+    {
         EPD_2IN9D_SendData(EPD_2IN9D_lut_vcom1[count]);
     }
 
     EPD_2IN9D_SendCommand(0x21);
-    for(count=0; count<42; count++) {
+    for (count = 0; count < 42; count++)
+    {
         EPD_2IN9D_SendData(EPD_2IN9D_lut_ww1[count]);
     }
 
     EPD_2IN9D_SendCommand(0x22);
-    for(count=0; count<42; count++) {
+    for (count = 0; count < 42; count++)
+    {
         EPD_2IN9D_SendData(EPD_2IN9D_lut_bw1[count]);
     }
 
     EPD_2IN9D_SendCommand(0x23);
-    for(count=0; count<42; count++) {
+    for (count = 0; count < 42; count++)
+    {
         EPD_2IN9D_SendData(EPD_2IN9D_lut_wb1[count]);
     }
 
     EPD_2IN9D_SendCommand(0x24);
-    for(count=0; count<42; count++) {
+    for (count = 0; count < 42; count++)
+    {
         EPD_2IN9D_SendData(EPD_2IN9D_lut_bb1[count]);
     }
 }
@@ -242,8 +423,8 @@ parameter:
 ******************************************************************************/
 static void EPD_2IN9D_TurnOnDisplay(void)
 {
-    EPD_2IN9D_SendCommand(0x12);		 //DISPLAY REFRESH
-    DEV_Delay_ms(10);     //!!!The delay here is necessary, 200uS at least!!!
+    EPD_2IN9D_SendCommand(0x12); // DISPLAY REFRESH
+    DEV_Delay_ms(10);            //!!!The delay here is necessary, 200uS at least!!!
 
     EPD_2IN9D_ReadBusy();
 }
@@ -255,20 +436,20 @@ parameter:
 void EPD_2IN9D_Init(void)
 {
     EPD_2IN9D_Reset();
-	
-	EPD_2IN9D_SendCommand(0x04);  
-	EPD_2IN9D_ReadBusy();//waiting for the electronic paper IC to release the idle signal
 
-	EPD_2IN9D_SendCommand(0x00);			//panel setting
-	EPD_2IN9D_SendData(0x1f);		//LUT from OTP，KW-BF   KWR-AF	BWROTP 0f	BWOTP 1f
+    EPD_2IN9D_SendCommand(0x04);
+    EPD_2IN9D_ReadBusy(); // waiting for the electronic paper IC to release the idle signal
 
-	EPD_2IN9D_SendCommand(0x61);			//resolution setting
-	EPD_2IN9D_SendData (0x80);        	 
-	EPD_2IN9D_SendData (0x01);		
-	EPD_2IN9D_SendData (0x28);	
+    EPD_2IN9D_SendCommand(0x00); // panel setting
+    EPD_2IN9D_SendData(0x1f);    // LUT from OTP，KW-BF   KWR-AF	BWROTP 0f	BWOTP 1f
 
-	EPD_2IN9D_SendCommand(0X50);			//VCOM AND DATA INTERVAL SETTING			
-	EPD_2IN9D_SendData(0x97);		//WBmode:VBDF 17|D7 VBDW 97 VBDB 57		WBRmode:VBDF F7 VBDW 77 VBDB 37  VBDR B7
+    EPD_2IN9D_SendCommand(0x61); // resolution setting
+    EPD_2IN9D_SendData(0x80);
+    EPD_2IN9D_SendData(0x01);
+    EPD_2IN9D_SendData(0x28);
+
+    EPD_2IN9D_SendCommand(0X50); // VCOM AND DATA INTERVAL SETTING
+    EPD_2IN9D_SendData(0x97);    // WBmode:VBDF 17|D7 VBDW 97 VBDB 57		WBRmode:VBDF F7 VBDW 77 VBDB 37  VBDR B7
 }
 
 /******************************************************************************
@@ -278,24 +459,56 @@ parameter:
 void EPD_2IN9D_Clear(void)
 {
     UWORD Width, Height;
-    Width = (EPD_2IN9D_WIDTH % 8 == 0)? (EPD_2IN9D_WIDTH / 8 ): (EPD_2IN9D_WIDTH / 8 + 1);
+    Width = (EPD_2IN9D_WIDTH % 8 == 0) ? (EPD_2IN9D_WIDTH / 8) : (EPD_2IN9D_WIDTH / 8 + 1);
     Height = EPD_2IN9D_HEIGHT;
 
     EPD_2IN9D_SendCommand(0x10);
-    for (UWORD j = 0; j < Height; j++) {
-        for (UWORD i = 0; i < Width; i++) {
+    for (UWORD j = 0; j < Height; j++)
+    {
+        for (UWORD i = 0; i < Width; i++)
+        {
             EPD_2IN9D_SendData(0x00);
         }
     }
 
     EPD_2IN9D_SendCommand(0x13);
-    for (UWORD j = 0; j < Height; j++) {
-        for (UWORD i = 0; i < Width; i++) {
+    for (UWORD j = 0; j < Height; j++)
+    {
+        for (UWORD i = 0; i < Width; i++)
+        {
             EPD_2IN9D_SendData(0xFF);
         }
     }
     EPD_2IN9D_TurnOnDisplay();
 }
+
+// void EPD_Clear(uint8_t data)
+// {
+//     uint8_t databuf[16];
+//     for (int i = 0; i < 16; i++)
+//         databuf[i] = data;
+
+//     EPD_SetWindows(0, 0, EPD_2IN9D_WIDTH, EPD_2IN9D_HEIGHT);
+//     for (uint16_t j = 0; j < EPD_2IN9D_HEIGHT; j++)
+//     {
+//         EPD_SetCursor(0, j);
+//         EPD_SendCom(0x24);
+//         EPD_SendDatas((uint8_t *)databuf, 16);
+//     }
+//     EPD_DisON();
+// }
+
+// void EPD_Display(uint8_t *Image)
+// {
+//     EPD_SetWindows(0, 0, EPD_2IN9D_WIDTH, EPD_2IN9D_HEIGHT);
+//     for (uint16_t j = 0; j < EPD_2IN9D_HEIGHT; j++)
+//     {
+//         EPD_SetCursor(0, j);
+//         EPD_SendCom(0x24);
+//         EPD_SendDatas((uint8_t *)Image + j * 16, 16);
+//     }
+//     EPD_DisON();
+// }
 
 /******************************************************************************
 function :	Sends the image buffer in RAM to e-Paper and displays
@@ -304,22 +517,26 @@ parameter:
 void EPD_2IN9D_Display(UBYTE *Image)
 {
     UWORD Width, Height;
-    Width = (EPD_2IN9D_WIDTH % 8 == 0)? (EPD_2IN9D_WIDTH / 8 ): (EPD_2IN9D_WIDTH / 8 + 1);
+    Width = (EPD_2IN9D_WIDTH % 8 == 0) ? (EPD_2IN9D_WIDTH / 8) : (EPD_2IN9D_WIDTH / 8 + 1);
     Height = EPD_2IN9D_HEIGHT;
 
-    EPD_2IN9D_SendCommand(0x10);
-    for (UWORD j = 0; j < Height; j++) {
-        for (UWORD i = 0; i < Width; i++) {
-            EPD_2IN9D_SendData(0x00);
-        }
-    }
+    // EPD_2IN9D_SendCommand(0x10);
+    // for (UWORD j = 0; j < Height; j++)
+    // {
+    //     for (UWORD i = 0; i < Width; i++)
+    //     {
+    //         EPD_2IN9D_SendData(0x00);
+    //     }
+    // }
 
     EPD_2IN9D_SendCommand(0x13);
-    for (UWORD j = 0; j < Height; j++) {
-        for (UWORD i = 0; i < Width; i++) {
-            EPD_2IN9D_SendData(Image[i + j * Width]);
-        }
-    }
+    // for (UWORD j = 0; j < Height; j++)
+    // {
+    //     for (UWORD i = 0; i < Width; i++)
+    //     {
+    //         EPD_2IN9D_SendData(Image[i + j * Width]);
+    //     }
+    // }
 
     EPD_2IN9D_TurnOnDisplay();
 }
@@ -332,29 +549,31 @@ void EPD_2IN9D_DisplayPart(UBYTE *Image)
 {
     /* Set partial Windows */
     EPD_2IN9D_SetPartReg();
-    EPD_2IN9D_SendCommand(0x91);		//This command makes the display enter partial mode
-    EPD_2IN9D_SendCommand(0x90);		//resolution setting
-    EPD_2IN9D_SendData(0);           //x-start
-    EPD_2IN9D_SendData(EPD_2IN9D_WIDTH - 1);       //x-end
+    EPD_2IN9D_SendCommand(0x91);             // This command makes the display enter partial mode
+    EPD_2IN9D_SendCommand(0x90);             // resolution setting
+    EPD_2IN9D_SendData(0);                   // x-start
+    EPD_2IN9D_SendData(EPD_2IN9D_WIDTH - 1); // x-end
 
     EPD_2IN9D_SendData(0);
-    EPD_2IN9D_SendData(0);     //y-start
+    EPD_2IN9D_SendData(0); // y-start
     EPD_2IN9D_SendData(EPD_2IN9D_HEIGHT / 256);
-    EPD_2IN9D_SendData(EPD_2IN9D_HEIGHT % 256 - 1);  //y-end
+    EPD_2IN9D_SendData(EPD_2IN9D_HEIGHT % 256 - 1); // y-end
     EPD_2IN9D_SendData(0x28);
 
     UWORD Width;
-    Width = (EPD_2IN9D_WIDTH % 8 == 0)? (EPD_2IN9D_WIDTH / 8 ): (EPD_2IN9D_WIDTH / 8 + 1);
-    
+    Width = (EPD_2IN9D_WIDTH % 8 == 0) ? (EPD_2IN9D_WIDTH / 8) : (EPD_2IN9D_WIDTH / 8 + 1);
+
     /* send data */
     EPD_2IN9D_SendCommand(0x13);
-    for (UWORD j = 0; j < EPD_2IN9D_HEIGHT; j++) {
-        for (UWORD i = 0; i < Width; i++) {
+    for (UWORD j = 0; j < EPD_2IN9D_HEIGHT; j++)
+    {
+        for (UWORD i = 0; i < Width; i++)
+        {
             EPD_2IN9D_SendData(Image[i + j * Width]);
         }
     }
 
-    /* Set partial refresh */    
+    /* Set partial refresh */
     EPD_2IN9D_TurnOnDisplay();
 }
 
@@ -366,8 +585,8 @@ void EPD_2IN9D_Sleep(void)
 {
     EPD_2IN9D_SendCommand(0X50);
     EPD_2IN9D_SendData(0xf7);
-    EPD_2IN9D_SendCommand(0X02);  	//power off
+    EPD_2IN9D_SendCommand(0X02); // power off
     EPD_2IN9D_ReadBusy();
-    EPD_2IN9D_SendCommand(0X07);  	//deep sleep
+    EPD_2IN9D_SendCommand(0X07); // deep sleep
     EPD_2IN9D_SendData(0xA5);
 }

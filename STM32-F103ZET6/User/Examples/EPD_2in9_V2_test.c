@@ -33,27 +33,29 @@
 int EPD_test(void)
 {
     printf("EPD_2IN9_V2_test Demo\r\n");
-    if(DEV_Module_Init()!=0){
+    if (DEV_Module_Init() != 0)
+    {
         return -1;
     }
 
     printf("e-Paper Init and Clear...\r\n");
-	EPD_2IN9_V2_Init();
+    EPD_2IN9_V2_Init();
     EPD_2IN9_V2_Clear();
 
-    //Create a new image cache
+    // Create a new image cache
     UBYTE *BlackImage;
-    UWORD Imagesize = ((EPD_2IN9_V2_WIDTH % 8 == 0)? (EPD_2IN9_V2_WIDTH / 8 ): (EPD_2IN9_V2_WIDTH / 8 + 1)) * EPD_2IN9_V2_HEIGHT;
-    if((BlackImage = (UBYTE *)malloc(Imagesize)) == NULL) {
+    UWORD Imagesize = ((EPD_2IN9_V2_WIDTH % 8 == 0) ? (EPD_2IN9_V2_WIDTH / 8) : (EPD_2IN9_V2_WIDTH / 8 + 1)) * EPD_2IN9_V2_HEIGHT;
+    if ((BlackImage = (UBYTE *)malloc(Imagesize)) == NULL)
+    {
         printf("Failed to apply for black memory...\r\n");
         return -1;
     }
     printf("Paint_NewImage\r\n");
     Paint_NewImage(BlackImage, EPD_2IN9_V2_WIDTH, EPD_2IN9_V2_HEIGHT, 90, WHITE);
-	Paint_Clear(WHITE);
+    Paint_Clear(WHITE);
 
-#if 1  //show image for array  
-    Paint_NewImage(BlackImage, EPD_2IN9_V2_WIDTH, EPD_2IN9_V2_HEIGHT, 90, WHITE);  
+#if 0 // show image for array
+    Paint_NewImage(BlackImage, EPD_2IN9_V2_WIDTH, EPD_2IN9_V2_HEIGHT, 90, WHITE);
     printf("show image for array\r\n");
     Paint_SelectImage(BlackImage);
     Paint_Clear(WHITE);
@@ -63,13 +65,13 @@ int EPD_test(void)
     DEV_Delay_ms(3000);
 #endif
 
-#if 1  // Drawing on the image
-	Paint_NewImage(BlackImage, EPD_2IN9_V2_WIDTH, EPD_2IN9_V2_HEIGHT, 90, WHITE);  	
+#if 1 // Drawing on the image
+    Paint_NewImage(BlackImage, EPD_2IN9_V2_WIDTH, EPD_2IN9_V2_HEIGHT, 90, WHITE);
     printf("Drawing\r\n");
-    //1.Select Image
+    // 1.Select Image
     Paint_SelectImage(BlackImage);
     Paint_Clear(WHITE);
-	
+
     // 2.Drawing on the image
     printf("Drawing:BlackImage\r\n");
     Paint_DrawPoint(10, 80, BLACK, DOT_PIXEL_1X1, DOT_STYLE_DFT);
@@ -101,7 +103,7 @@ int EPD_test(void)
     DEV_Delay_ms(3000);
 #endif
 
-#if 1   //Partial refresh, example shows time    		
+#if 0 // Partial refresh, example shows time    		
 	Paint_NewImage(BlackImage, EPD_2IN9_V2_WIDTH, EPD_2IN9_V2_HEIGHT, 90, WHITE);  
     printf("Partial refresh\r\n");
     Paint_SelectImage(BlackImage);
@@ -138,18 +140,17 @@ int EPD_test(void)
     }
 #endif
 
-	printf("Clear...\r\n");
-	EPD_2IN9_V2_Init();
+    printf("Clear...\r\n");
+    EPD_2IN9_V2_Init();
     EPD_2IN9_V2_Clear();
-	
+
     printf("Goto Sleep...\r\n");
     EPD_2IN9_V2_Sleep();
     free(BlackImage);
     BlackImage = NULL;
-    DEV_Delay_ms(2000);//important, at least 2s
+    DEV_Delay_ms(2000); // important, at least 2s
     // close 5V
     printf("close 5V, Module enters 0 power consumption ...\r\n");
     DEV_Module_Exit();
     return 0;
 }
-
